@@ -49,21 +49,27 @@ return
 return
 
 :*?C:###r::
-	String := "\( \sqrt[]{} \)"
+	String := "\( \sqrt{} \)"
 	SendRaw %String% 
-	Send {Left 3}
+	Send {Left 4}
 return
 
 :*?C:##r::
-	String := "\sqrt[]{}"
-	SendRaw %String% 
-	Send {Left 3}
-return
-
-:*?C:##R::
 	String := "\sqrt{}"
 	SendRaw %String% 
 	Send {Left 1}
+return
+
+:*?C:###R::
+	String := "\( \sqrt[]{} \)"
+	SendRaw %String% 
+	Send {Left 4}
+return
+
+:*?C:##R::
+	String := "\sqrt[]{}"
+	SendRaw %String% 
+	Send {Left 3}
 return
 
 :*?C:###log::
