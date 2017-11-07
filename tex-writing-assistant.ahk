@@ -24,16 +24,22 @@
 	Send {Left 3}
 return
 
+:*?C:###f::
+	String := "\( \frac{}{} \)"
+	SendRaw %String% 
+	Send {Left 3}
+return
+
 :*?C:##f::
 	String := "\frac{}{}"
 	SendRaw %String% 
 	Send {Left 3}
 return
 
-:*?C:###f::
-	String := "\( \frac{}{} \)"
+:*?C:###int::
+	String := "\( \int_{0}^{\infty} \)"
 	SendRaw %String% 
-	Send {Left 3}
+	Send {Left 10}
 return
 
 :*?C:##int::
@@ -42,10 +48,10 @@ return
 	Send {Left 10}
 return
 
-:*?C:###int::
-	String := "\( \int_{0}^{\infty} \)"
+:*?C:###r::
+	String := "\( \sqrt[]{} \)"
 	SendRaw %String% 
-	Send {Left 10}
+	Send {Left 3}
 return
 
 :*?C:##r::
@@ -60,8 +66,8 @@ return
 	Send {Left 1}
 return
 
-:*?C:###r::
-	String := "\( \sqrt[]{} \)"
+:*?C:###log::
+	String := "\( \log_{}{} \)"
 	SendRaw %String% 
 	Send {Left 3}
 return
@@ -72,10 +78,10 @@ return
 	Send {Left 3}
 return
 
-:*?C:###log::
-	String := "\( \log_{}{} \)"
+:*?C:###lim::
+	String := "\( \lim_{x\to\infty} \)"
 	SendRaw %String% 
-	Send {Left 3}
+	Send {Left 10}
 return
 
 :*?C:##lim::
@@ -84,26 +90,14 @@ return
 	Send {Left 10}
 return
 
-:*?C:###lim::
-	String := "\( \lim_{x\to\infty} \)"
-	SendRaw %String% 
-	Send {Left 10}
-return
-
-:*?C:##sum::
-	String := "\sum_{n=0}^{\infty}{n}"
-	SendRaw %String% 
-	Send {Left 14}
-return
-
 :*?C:###sum::
 	String := "\( \sum_{n=0}^{\infty}{n} \)"
 	SendRaw %String% 
 	Send {Left 14}
 return
 
-:*?C:##prod::
-	String := "\prod_{n=0}^{\infty}{n}"
+:*?C:##sum::
+	String := "\sum_{n=0}^{\infty}{n}"
 	SendRaw %String% 
 	Send {Left 14}
 return
@@ -114,10 +108,10 @@ return
 	Send {Left 14}
 return
 
-:*?C:##mat::
-	String := "\begin{pmatrix} a & b \\ c & d \end{pmatrix}"
+:*?C:##prod::
+	String := "\prod_{n=0}^{\infty}{n}"
 	SendRaw %String% 
-	Send {Left 28}
+	Send {Left 14}
 return
 
 :*?C:###mat::
@@ -126,14 +120,20 @@ return
 	Send {Left 28}
 return
 
-:*?C:##vec::
-	String := "\begin{pmatrix} x\\y\\z \end{pmatrix}"
+:*?C:##mat::
+	String := "\begin{pmatrix} a & b \\ c & d \end{pmatrix}"
 	SendRaw %String% 
-	Send {Left 21}
+	Send {Left 28}
 return
 
 :*?C:###vec::
 	String := "\( \begin{pmatrix} x\\y\\z \end{pmatrix} \)"
+	SendRaw %String% 
+	Send {Left 21}
+return
+
+:*?C:##vec::
+	String := "\begin{pmatrix} x\\y\\z \end{pmatrix}"
 	SendRaw %String% 
 	Send {Left 21}
 return
