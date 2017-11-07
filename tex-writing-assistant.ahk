@@ -141,15 +141,13 @@ return
 :*?C:##pq::
 	String := "x_{1,2} = -( \frac{p}{2} ) \pm \sqrt{ ( \frac{p}{2} )^{2} - q}"
 	SendRaw %String% 
-	Send {Home}
-	Send {Right 20}
+	Send {Left 42}
 return
 
 :*?C:##abc::
 	String := "x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4·a·c}}{2·a}"
 	SendRaw %String% 
-	Send {Home}
-	Send {Right 18}
+	Send {Left 29}
 return
 
 :*?C:##zz::
