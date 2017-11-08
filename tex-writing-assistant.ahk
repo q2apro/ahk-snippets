@@ -27,7 +27,7 @@ return
 :*?C:###f::
 	String := "\( \frac{}{} \)"
 	SendRaw %String% 
-	Send {Left 3}
+	Send {Left 6}
 return
 
 :*?C:##f::
@@ -160,6 +160,18 @@ return
 	String := "K_n = K_0 \cdot (1+p)^n"
 	SendRaw %String% 
 	Send {Left 14}
+return
+
+:*?C:###t::
+	String := "\( \text{} \)"
+	SendRaw %String% 
+	Send {Left 4}
+return
+
+:*?C:##t::
+	String := "\text{}"
+	SendRaw %String% 
+	Send {Left 1}
 return
 
 ; END
