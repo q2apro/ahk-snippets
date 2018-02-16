@@ -1,6 +1,6 @@
-﻿# TeX Writing Assistant
+﻿# LaTeX Writing Assistant
 
-This script helps to quickly enter TeX, for instance, you enter `##f` and it turns immediately `\frac{}{}` 
+This script helps to quickly enter LaTex/TeX, for instance, you enter `##f` and it turns immediately `\frac{}{}` 
 and puts the cursor on the right position. 
 
 Use three hash signs, e. g. `###f` to output inline TeX: `\( \frac{}{} \)`
